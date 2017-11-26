@@ -30,12 +30,12 @@ public class Start {
 //        commonVisitor.buy(computer2);
 //        commonVisitor.buy(subwoofer);
 
-        BankInterface sberbank = new Sberbank("Sber", "Russian bank");
-        sberbank.checkInfo();
+        Sberbank sberbank = new Sberbank("Sber", "Russian bank");
+        sberbank.checkInfo(true);
         sberbank.checkInfo();
         sberbank.checkInfo();
 
-        BankInterface vtb = new VTB("VTB", "Russian bank");
+        VTB vtb = new VTB("VTB", "Russian bank");
         vtb.checkInfo();
         vtb.checkInfo();
 

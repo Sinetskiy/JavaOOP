@@ -12,4 +12,12 @@ public class Televisor extends ElectronicDevice{
           System.out.println("select channel ...");
      }
 
+     public void selectChannel(int number){  // перегрузка
+          System.out.println("selected channel with number " + number);
+     }
+
+     public void selectChannel(String name){ // перегрузка
+          System.out.println("selected channel with name " + name);
+     }
+
 }

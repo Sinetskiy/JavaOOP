@@ -22,4 +22,18 @@ public class Sberbank extends AbstractBank {
 
         //доработанная реализация
     }
+
+    // сбербанк также умеет рассматривать срочные заявки с помошью перегруженного метода
+    public void checkInfo(boolean critical) {
+        if(critical){
+            System.out.println("Critical Sberbank !!!");
+            return;
+        }
+        super.checkInfo();
+    }
+
+//    public String checkInfo(){ // !!! нельзя перегрузить метод по выходному параметру !!
+//        return "Sberbank";
+//    }
+
 }
