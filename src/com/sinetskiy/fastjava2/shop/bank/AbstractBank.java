@@ -2,9 +2,12 @@ package com.sinetskiy.fastjava2.shop.bank;
 
 import com.sinetskiy.fastjava2.shop.interfaces.BankInterface;
 
-public abstract class BaseBank implements BankInterface{
+public abstract class AbstractBank implements BankInterface{
 
-    public BaseBank(String name, String creditDescription) {
+    // количесво заявок по всем бынкам (можно также реализовать через коллекцию)
+    public static int requestCount;
+
+    public AbstractBank(String name, String creditDescription) {
         this.name = name;
         this.creditDescription = creditDescription;
     }
@@ -17,6 +20,7 @@ public abstract class BaseBank implements BankInterface{
     @Override
     public void checkInfo(){
         // стандартная реализация
+        requestCount++;
     }
 
     @Override

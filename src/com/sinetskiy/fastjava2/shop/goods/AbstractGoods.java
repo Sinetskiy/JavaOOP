@@ -6,6 +6,8 @@ import com.sinetskiy.fastjava2.shop.interfaces.GoodsInterface;
 
 public abstract class AbstractGoods implements GoodsInterface{
 
+    public static final int DEFAULT_GUARANTEE = 2; // константа
+
     //свойства, которые будут иметь все товары
     private double price;
     private boolean hasGuarantee;
@@ -18,6 +20,10 @@ public abstract class AbstractGoods implements GoodsInterface{
 
     public AbstractGoods(String name) {
         this.name = name;
+    }
+
+    public static void print(String message){
+        System.out.println("message = " + message + " => " + DEFAULT_GUARANTEE); // статичная переменная в статичном контексте
     }
 
     @Override

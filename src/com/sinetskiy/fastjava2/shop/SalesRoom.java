@@ -8,8 +8,9 @@ import java.util.ArrayList;
 
 public class SalesRoom {
 
+    public static final String SHOP_NAME = "TechnoDom";
+
     private ArrayList<DepartmentInterface> departmentList; // в каждом депараменте имеются свои сотрудники
-    private String name;
     private ArrayList<VisitorInterface> visitorList;
     private Administrator administrator;
 
