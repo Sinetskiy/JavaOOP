@@ -4,7 +4,7 @@ import com.sinetskiy.fastjava2.shop.department.BaseDepartment;
 import com.sinetskiy.fastjava2.shop.interfaces.DepartmentInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.GoodsInterface;
 
-public class BaseGoods implements GoodsInterface{
+public abstract class BaseGoods implements GoodsInterface{
 
     //свойства, которые будут иметь все товары
     private double price;

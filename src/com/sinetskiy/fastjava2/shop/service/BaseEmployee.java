@@ -3,7 +3,7 @@ package com.sinetskiy.fastjava2.shop.service;
 import com.sinetskiy.fastjava2.shop.interfaces.DepartmentInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.EmployeeInterface;
 
-public class BaseEmployee implements EmployeeInterface {
+public abstract class BaseEmployee implements EmployeeInterface {
 
     private String name;
     private DepartmentInterface department;
