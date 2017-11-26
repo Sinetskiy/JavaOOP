@@ -1,6 +1,6 @@
 package com.sinetskiy.fastjava2.shop.bank;
 
-public class Bank {
+public class BaseBank {
 
     private String name;
     private String creditDescription;

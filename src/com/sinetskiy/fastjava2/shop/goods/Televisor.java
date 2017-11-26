@@ -1,24 +1,11 @@
 package com.sinetskiy.fastjava2.shop.goods;
 
-public class Televisor {
+public class Televisor extends ElectronicDevice{
 
-    private String company;
-    private String department;
-    private String model;
+     private String model;
 
+     public void selectChannel(){
 
-    public void on(){
-
-    }
-
-    public void off(){
-
-    }
-
-    public void selectChannel(){
-
-    }
-
-    // пока без гетеров и сетеров, т.к. код будет еще меняться
+     }
 
 }

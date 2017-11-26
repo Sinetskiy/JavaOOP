@@ -1,6 +1,6 @@
 package com.sinetskiy.fastjava2.shop.client;
 
-public class Visitor {
+public class BaseVisitor {
 
     private String name;
 
@@ -11,5 +11,4 @@ public class Visitor {
     public void returnGoods() {
 
     }
-
 }

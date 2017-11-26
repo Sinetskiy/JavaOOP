@@ -1,16 +1,20 @@
 package com.sinetskiy.fastjava2.shop.client;
 
-public class VipVisitor {
+public class VipVisitor extends BaseVisitor{
 
-    private String name;
     private float discount;
 
+    @Override
     public void buy(){
-
+        if(!checkDiscount()) {
+            super.buy();
+        } else {
+            // купить со скидкой
+        }
     }
 
-    public void returnGoods(){
-
+    private boolean checkDiscount() {
+        return discount>0;
     }
 
 }

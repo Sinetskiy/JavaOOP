@@ -1,10 +1,8 @@
 package com.sinetskiy.fastjava2.shop.goods;
 
-public class HardDrive {
+public class HardDrive extends ElectronicDevice{
 
-    private String name;
     private int volume;
-    private String department;
 
     public void format(){
 
