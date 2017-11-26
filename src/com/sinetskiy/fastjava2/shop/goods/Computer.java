@@ -8,4 +8,13 @@ public class Computer extends ElectronicDevice{
 
     }
 
+    @Override
+    public void on() {
+        // специфичное включение жесткого диска
+    }
+
+    @Override
+    public void off() {
+        // специфичное выключение жесткого диска
+    }
 }

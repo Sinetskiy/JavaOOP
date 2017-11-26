@@ -16,4 +16,13 @@ public class HardDrive extends ElectronicDevice{
 
     }
 
+    @Override
+    public void on() {
+        // специфичное включение жесткого диска
+    }
+
+    @Override
+    public void off() {
+        // спаецифичное выключение жесткого диска
+    }
 }
