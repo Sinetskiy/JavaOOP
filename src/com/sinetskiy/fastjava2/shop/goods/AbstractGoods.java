@@ -1,17 +1,24 @@
 package com.sinetskiy.fastjava2.shop.goods;
 
-import com.sinetskiy.fastjava2.shop.department.BaseDepartment;
+import com.sinetskiy.fastjava2.shop.department.AbstractDepartment;
 import com.sinetskiy.fastjava2.shop.interfaces.DepartmentInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.GoodsInterface;
 
-public abstract class BaseGoods implements GoodsInterface{
+public abstract class AbstractGoods implements GoodsInterface{
 
     //свойства, которые будут иметь все товары
     private double price;
     private boolean hasGuarantee;
     private String name;
-    private BaseDepartment department;
+    private AbstractDepartment department;
     private String company;
+
+    public AbstractGoods() {
+    }
+
+    public AbstractGoods(String name) {
+        this.name = name;
+    }
 
     @Override
     public double getPrice() {

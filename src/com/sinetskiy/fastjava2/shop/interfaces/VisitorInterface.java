@@ -2,9 +2,9 @@ package com.sinetskiy.fastjava2.shop.interfaces;
 
 public interface VisitorInterface {
 
-    void buy();
+    void buy(GoodsInterface goods);
 
-    void returnGoods();
+    void returnGoods(GoodsInterface goods);
 
     String getName();
 }

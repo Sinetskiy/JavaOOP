@@ -1,4 +1,4 @@
 package com.sinetskiy.fastjava2.shop.department;
 
-public class GameDepartment extends BaseDepartment {
+public class GameDepartment extends AbstractDepartment {
 }

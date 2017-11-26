@@ -1,14 +1,12 @@
 package com.sinetskiy.fastjava2.shop.department;
 
-import com.sinetskiy.fastjava2.shop.goods.BaseGoods;
 import com.sinetskiy.fastjava2.shop.interfaces.DepartmentInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.EmployeeInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.GoodsInterface;
-import com.sinetskiy.fastjava2.shop.service.BaseEmployee;
 
 import java.util.ArrayList;
 
-public abstract class BaseDepartment implements DepartmentInterface {
+public abstract class AbstractDepartment implements DepartmentInterface {
 
     private String name;
     private ArrayList<EmployeeInterface> employeeList;

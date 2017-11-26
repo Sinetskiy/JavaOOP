@@ -1,13 +1,15 @@
 package com.sinetskiy.fastjava2.shop.client;
 
-public class VipVisitor extends BaseVisitor{
+import com.sinetskiy.fastjava2.shop.interfaces.GoodsInterface;
+
+public class VipVisitor extends AbstractVisitor {
 
     private float discount;
 
     @Override
-    public void buy(){
+    public void buy(GoodsInterface good){
         if(!checkDiscount()) {
-            super.buy();
+            super.buy(good);
         } else {
             // купить со скидкой
         }
