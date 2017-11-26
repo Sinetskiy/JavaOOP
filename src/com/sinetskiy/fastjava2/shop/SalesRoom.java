@@ -2,7 +2,7 @@ package com.sinetskiy.fastjava2.shop;
 
 import com.sinetskiy.fastjava2.shop.interfaces.DepartmentInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.VisitorInterface;
-import com.sinetskiy.fastjava2.shop.service.Administrator;
+import com.sinetskiy.fastjava2.shop.staff.Administrator;
 
 import java.util.ArrayList;
 

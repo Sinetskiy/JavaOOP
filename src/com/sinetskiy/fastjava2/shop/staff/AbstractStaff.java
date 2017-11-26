@@ -1,9 +1,9 @@
-package com.sinetskiy.fastjava2.shop.service;
+package com.sinetskiy.fastjava2.shop.staff;
 
 import com.sinetskiy.fastjava2.shop.interfaces.DepartmentInterface;
 import com.sinetskiy.fastjava2.shop.interfaces.EmployeeInterface;
 
-public abstract class AbstractEmployee implements EmployeeInterface {
+public abstract class AbstractStaff implements EmployeeInterface {
 
     private String name;
     private DepartmentInterface department;

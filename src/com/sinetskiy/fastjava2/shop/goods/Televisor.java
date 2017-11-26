@@ -9,7 +9,7 @@ public class Televisor extends ElectronicDevice{
      }
 
      public void selectChannel(){
-
+          System.out.println("select channel ...");
      }
 
 }
