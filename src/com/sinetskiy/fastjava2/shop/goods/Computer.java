@@ -8,6 +8,11 @@ public class Computer extends ElectronicDevice{
         super(name);
     }
 
+    public Computer(double price, boolean hasGuarantee, String name, String company, int ram) {
+        super(price, hasGuarantee, name, company);
+        this.ram = ram;
+    }
+
     public void loadOS(){
 
     }

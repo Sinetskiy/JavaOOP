@@ -6,6 +6,11 @@ public class VipVisitor extends AbstractVisitor {
 
     private float discount;
 
+    public VipVisitor(String name, float discount) {
+        super(name);
+        this.discount = discount;
+    }
+
     @Override
     public void buy(GoodsInterface good){
         if(!checkDiscount()) {

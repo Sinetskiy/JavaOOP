@@ -8,9 +8,16 @@ import java.util.ArrayList;
 
 public abstract class AbstractDepartment implements DepartmentInterface {
 
+    public AbstractDepartment() {
+    }
+
+    public AbstractDepartment(String name) {
+        this.name = name;
+    }
+
     private String name;
-    private ArrayList<EmployeeInterface> employeeList;
-    private ArrayList<GoodsInterface> goodsList;
+    private ArrayList<EmployeeInterface> employeeList = new ArrayList<EmployeeInterface>();
+    private ArrayList<GoodsInterface> goodsList = new ArrayList<GoodsInterface>();
 
     public void setName(String name) {
         this.name = name;
@@ -38,4 +45,15 @@ public abstract class AbstractDepartment implements DepartmentInterface {
     public ArrayList<GoodsInterface> getGoodsList() {
         return goodsList;
     }
+
+    public void addEmployee(EmployeeInterface epmloyee) {
+        epmloyee.setDepartment(this);
+        employeeList.add(epmloyee);
+    }
+
+    public void addGoods(GoodsInterface goods){
+        goods.setDepartment(this); // при добавлении товара для него автоматически прописывается отедел
+        goodsList.add(goods);
+    }
+
 }

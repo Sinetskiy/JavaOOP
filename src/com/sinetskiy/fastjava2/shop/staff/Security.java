@@ -1,6 +1,6 @@
 package com.sinetskiy.fastjava2.shop.staff;
 
-public class Security extends AbstractStaff {
+public class Security extends AbstractEmployee {
 
     public void checkVisitor(){
 

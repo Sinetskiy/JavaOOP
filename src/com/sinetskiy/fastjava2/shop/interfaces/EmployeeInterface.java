@@ -5,5 +5,5 @@ public interface EmployeeInterface {
     String getName();
     DepartmentInterface getDepartment();
     boolean isFree();
-
+    void setDepartment(DepartmentInterface department);
 }

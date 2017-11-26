@@ -22,6 +22,13 @@ public abstract class AbstractGoods implements GoodsInterface{
         this.name = name;
     }
 
+    public AbstractGoods(double price, boolean hasGuarantee, String name, String company) {
+        this.price = price;
+        this.hasGuarantee = hasGuarantee;
+        this.name = name;
+        this.company = company;
+    }
+
     public static void print(String message){
         System.out.println("message = " + message + " => " + DEFAULT_GUARANTEE); // статичная переменная в статичном контексте
     }
@@ -44,6 +51,15 @@ public abstract class AbstractGoods implements GoodsInterface{
     @Override
     public DepartmentInterface getDepartment() {
         return department;
+    }
+
+    @Override
+    public void setDepartment(AbstractDepartment department) {
+        this.department = department;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     @Override

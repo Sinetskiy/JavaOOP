@@ -8,14 +8,13 @@ public abstract class AbstractVisitor implements VisitorInterface{
 
     private String name;
 
+    public AbstractVisitor(String name) {
+        this.name = name;
+    }
+
     @Override
     public void buy(GoodsInterface goods){
-
-        System.out.println("goods.getName() = " + goods.getName());
-
-        if(goods instanceof Televisor) {
-            ((Televisor) goods).selectChannel();
-        }
+        System.out.println("buy "+goods.getName());
     }
 
     @Override
