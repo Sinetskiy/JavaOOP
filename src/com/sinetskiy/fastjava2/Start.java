@@ -1,4 +1,4 @@
-package com.sinetskiy.fastjava2.main;
+package com.sinetskiy.fastjava2;
 
 public class Start {
 
