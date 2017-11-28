@@ -1,4 +1,4 @@
-package collections;
+package collections.sets;
 
 public class Car {
 

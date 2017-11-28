@@ -1,4 +1,4 @@
-package collections;
+package collections.generic;
 
 import java.util.*;
 
@@ -21,7 +21,7 @@ public class Start {
 
     private static void linkedHashSetExample() {
 
-        LinkedHashSet set = new LinkedHashSet();
+        Set<Integer> set = new LinkedHashSet();
 
         set.add(32);
         set.add(322);
@@ -30,7 +30,7 @@ public class Start {
         set.add(352);
         set.add(3298);
 
-        Iterator iterator = set.iterator();
+        Iterator<Integer> iterator = set.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
@@ -38,7 +38,7 @@ public class Start {
 
     private static void treeSetExample() {
 
-        Set tree = new TreeSet();
+        Set<Integer> tree = new TreeSet();
         tree.add(34);
         tree.add(21);
         tree.add(67);
@@ -47,7 +47,7 @@ public class Start {
         tree.add(3343);
         tree.add(23);
 
-        Iterator iterator = tree.iterator();
+        Iterator<Integer> iterator = tree.iterator();
 
         while(iterator.hasNext()){
             System.out.println(iterator.next() + " ");
@@ -57,25 +57,29 @@ public class Start {
 
     private static void hashSetExample() {
 
-        Set cars = new HashSet();
+        Set<Car> cars = new HashSet();
 
         Car car1 = new Car("BMW");
         Car car2 = new Car("Niva");
         Car car3 = new Car("Nissan");
         Car car4 = new Car("Nissan");
+        Car car5 = new MiniCar("Mini");
 
         cars.add(car1);
         cars.add(car2);
         cars.add(car3);
         cars.add(car4); // добавление дубликатов
+        cars.add(car5);
+
 
         // переход по колекции с помощью итератора
-        Iterator iterator = cars.iterator();
+        Iterator<Car> iterator = cars.iterator();
 
         // not ordered - порядок получения не такой же, как порядок вставки
         while(iterator.hasNext()){
-            Car car = (Car) iterator.next();
+            Car car = iterator.next();
             System.out.println(car.getName());
+            car.drive();
         }
 
     }
